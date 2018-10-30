@@ -1,0 +1,833 @@
+/* GENERAL STLYES */
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    max-width: 1600px;
+    font-size: 62.5%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}
+
+.innerWrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* MAIN CONTENT STYLES */
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 25px 0;
+}
+
+/* HEADER STYLES */
+
+header {
+    background-image: url(../Assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+nav {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+a,
+.heroText {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.summitLogo {
+    float: left;
+    padding: 10px 15px 10px 0;
+}
+
+.summitLogo a {
+    font-size: 4.2rem;
+}
+
+.navLeft {
+    float: right;
+}
+
+nav ul,
+footer ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; 
+    padding: 10px 15px;
+}
+
+nav ul li:last-child {
+    padding-right: 0;
+}
+
+ul.navLeft {
+    margin: 0;
+}
+
+.heroText {
+    text-align: center;
+    margin: 0;
+    margin-top: 180px;
+}
+
+h1.smallText {
+    font-size: 3.2rem;
+    margin: 45px 0;
+}
+
+h1.largeText {
+    font-size: 13rem;
+    margin: 0;
+}
+
+.socials {
+    float: right;
+    padding-top: 223px;
+    padding-right: 70px;
+}
+
+.socials .fab {
+    color: #215a6d;
+    font-size: 2rem;
+    display: block;
+    padding: 7.5px 0;
+    text-align: center;
+}
+
+/* ABOUT SUMMIT STYLES */
+
+
+.aboutWrapper {
+    width: 49.4%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.aboutWrapper p {
+    text-align: center;
+}
+
+.aboutText {
+    text-align: center;
+}
+
+.aboutText h2 {
+    margin: 0;
+}
+
+.findOutMore {
+    background:#8dd7e9;
+    width: 214px;
+    height: 50px;
+    margin:0 auto;
+    /* padding: 0; */
+    text-align: center;
+    line-height: 50px;
+}
+
+.aboutMe .findOutMore {
+    margin: 0;
+}
+
+.aboutWrapper a,
+.aboutMe a {
+    color: black;
+    display: block;
+}
+
+/* CELL STYLES */
+/* =========== */
+
+.fourSquare {
+    background: #f6f6f6;
+}
+
+.row1 {
+    float: left;
+    width: 50%;
+}
+
+.fourSquare2 {
+    clear: both;
+}
+
+.row2 {
+    float: right;
+    width: 50%;
+}
+
+.fourSquare a {
+    color: black;
+    display: block;
+}
+
+.fourSquare h3 {
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+.textBox {
+    padding: 100px 0;
+}
+
+.row1 .textBox {
+    width: 40.25%;
+    margin-left: 20%;
+}    
+
+.row2 .textBox {
+    width: 42.5%;
+    margin-left: 30%;
+}
+
+.textBox h3,
+.textBox p {
+    text-align: center;
+}
+
+.readMore {
+    background:#8dd7e9;
+    width: 160px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ICONS STYLES */
+
+
+.iconSection {
+    background: #215a6d;
+}
+
+.icons h3 {
+    padding-top:28.5px;
+    margin: 0;
+}
+
+.iconWrapper {
+    margin: 0 25.625%;
+    /* margin: 0 auto; */
+    background: #215a6d;
+    padding: 100px 0;
+}
+.icons {
+    float: left;
+    width: 33%;
+    padding: 0 4.7%;
+    text-align: center;
+}
+
+.icons:first-child {
+    padding-left: 0;
+}
+.icons:last-child {
+    padding-right: 0;
+}
+
+.fas {
+    color: white;
+    font-size: 3.65rem;
+}
+
+.icons h3 {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+/* ABOUT ME STYLES */
+
+.aboutMe h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.aboutMe {
+    background: #f6f6f6;
+}
+
+.aboutMe {
+    padding: 100px 0;
+}
+
+.aboutMe img {
+    float: left;
+    width: 25%;
+}
+
+.aboutMeText {
+    float: left;
+    width: 75%;
+    padding-left: 37px;
+}
+
+.aboutMeText p {
+    /* margin: 25px 0; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/*================*/
+/* GALLERY STYLES */
+/*================*/
+
+.gallery {
+    background: #fcfcfc;
+    padding: 100px 0;
+}
+
+.gallery img {
+    float: left;
+    /* width: calc(33% - 80px); */
+}
+
+.gallery img:nth-child(2n){
+    margin: 0 40px;
+}
+
+/*============*/
+/*INPUT STYLES*/
+/*============*/
+
+input {
+    float: left;
+}
+
+input[type=email] {
+	padding: 10px 39.1px 10px 32.7px;
+    width:60%;
+    border:none;
+}
+
+input[type=submit] {
+    background: #8dd7e9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+	padding:10px 0;
+	transition: ease 0.1s;
+    cursor: pointer;
+    width:40%;
+    border:none;
+}
+
+::placeholder {
+	color: #232323;
+}
+
+input[type=submit]:hover {
+	background:rgba(22, 64, 128,0.5);
+	color: white;
+}
+
+
+
+/* FOOTER STYLES */
+/* ============= */
+
+footer {
+    clear: both;
+}
+
+/* .footFont p {
+    font-size: 2.4rem;
+    font-weight: bold; 
+} */
+
+.topFooter {
+    background: #215a6d;
+    color: white;
+    padding: 100px 0;
+}
+
+/* footer p {
+    margin-top: 4px;
+} */
+/* pixel counting or nah */
+
+.footColumn {
+    float: left;
+    width: 14%;
+    margin: 0 7.5px;
+}
+
+.footColumn:first-child {
+    margin: 0;
+}
+
+.footColumn:last-child {
+    margin-right: 0;
+}
+
+.footColumn:nth-child(2) {
+    margin-left: 70px;
+}
+
+.stayUpdatedColumn {
+    width: 50%;
+}
+
+.footColumn p,
+.footColumn ul {
+    margin-top: 4px;
+    margin-bottom: 11px;
+    padding: 0;
+}
+
+.footColumn p span {
+    display: block;
+}
+.footColumn a {
+     font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.footColumn .bottomNav a,
+.bottomNav a {
+    text-transform: uppercase;
+}
+
+.bottomFooter {
+    background: #094154;
+    color: white;
+    text-align: center;
+}
+
+.bottomFooter p {
+    margin: initial;
+    padding: initial;
+    font-weight: bold;
+}
+
+/* NOTES TO CONSIDER */
+/* min-hieght best for hero image */
+/* use max width - mandatory, width is 'icing'*/
+/* 1000px wide */
+
+/* want things to stay relative! dont pixel count */
+/* font sizes you want to stick with */
+/* make sure to scale 10% margins for nav etc; zoom out to emulate  */
+
+/*=================*/
+/*RESPONSIVE STYLES*/
+/*=================*/
+
+@media (max-width: 1280px) {
+    
+    .innerWrapper {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .fourSquare {
+        background: #f6f6f6;
+    }
+
+    /* WORK ON REMOVING WIERD PADDING HERE */
+
+    .textBox {
+        padding: 0;
+    }
+
+    .row1 .textBox {
+        width: 60.25%;
+        margin-left: 20%;
+    }    
+
+    .row2 .textBox {
+        width: 42.5%;
+        margin-left: 10%;
+    }
+
+    .gallery {
+        margin: 0 auto;
+    }
+    
+    .gallery img {
+        float: left;
+        /* width: calc(33% - (20px * 4)); */
+        /* margin: 100px 0; */
+    }
+
+    .footColumn:nth-child(2) {
+        margin-left: 25px;
+        margin-top: 0;
+    }
+
+
+
+
+
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+    h1.smallText {
+        font-size: 2.2rem;
+        margin: 45px 0;
+    }
+
+    h1.largeText {
+        font-size: 10rem;
+        margin: 0;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+
+
+/* FOR SMARTPHONES PORTRAIT AND LANDSCAPE */
+
+@media only screen and (max-width : 400px) {
+
+    header {
+        height: 600px;
+    }
+
+    .summitLogo {
+        float: left;
+        padding: initial;
+        padding-left: 20px;
+    }
+    
+    .summitLogo a {
+        font-size: 3rem;
+    }
+    
+    nav {
+        padding-top: 10px;
+        margin: 3px;
+    }
+
+    .heroText {
+        margin: 0;
+        margin-top: 98px;
+    }
+
+    /* .navLeft a.icon {
+	  display: block;
+	} */
+
+	.navLeft.responsive {position: relative;}
+	.navLeft.responsive .icon {
+	  position: relative;
+	  right: 0;
+	  top: 0;
+    }
+    
+	.navLeft.responsive a {
+	  display: block;
+	  text-align: center;
+	}
+	.navLeft.responsive {float: none;}
+	.navLeft.responsive {position: relative;}
+	.navLeft.responsive {
+	  display: block;
+	  width: 100%;
+	}
+
+/* WORK ON HAMBURGER up HERE ----------------*/
+    .navLeft {
+	    display: none;
+	}
+
+    h1.smallText {
+        font-size: 2.6rem;
+        margin: 45px 0;
+    }
+
+    h1.largeText {
+        font-size: 8rem;
+        margin: 0;
+    }
+    
+    .socials {
+        display: none;
+    }
+
+    /* ========================*/
+    /* RESPONSIVE ABOUT STYLES */
+    /* ========================*/
+    .aboutWrapper {
+        width:initial; 
+        padding: 50px 20px;
+    }
+
+    .aboutText h2 {
+        font-size: 4.18rem;
+        margin: 0;
+    }
+
+    /* CELL STYLES */
+    /* =========== */
+
+    .row1 {
+        float: none;
+        width: 100%;
+    }
+
+    .row2 {
+        float: none;
+        width: 100%;
+    }
+
+    .textBox {
+        padding: 50px 0;
+    }
+
+    .textBox p {
+        margin: 0 39px;
+    }
+
+    .textBox h3 {
+        margin: 0;
+        padding: 0 32px;
+    }
+
+    .fourSquare img,
+    .fourSquare2 img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .row1 .textBox {
+        width: 100%;
+        margin-left: initial;
+    }    
+
+    .row2 .textBox {
+        width: 100%;
+        margin-left: initial;
+    }
+
+    .textBox h3,
+    .textBox p {
+        text-align: center;
+    }
+
+
+
+
+    
+
+    /* RESPONSIVE ICON STYLES */
+    
+    .iconWrapper {
+        margin: 0;
+        background: #215a6d;
+        padding: 50px 110px;
+    }
+    .icons {
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .icons:first-child {
+        padding-left: initial;
+        margin-top: 0;
+    }
+    
+    .icons:last-child {
+        padding-right: initial;
+        margin-bottom: 0;
+    }
+
+    .icons h3 {
+        padding-top: 23px;
+    }
+
+    .fas {
+        font-size: 3.65rem;
+    }
+
+    /* RESPONSIVE ABOUT ME STYLES */
+
+    .aboutMe {
+        padding: 50px 0;
+    }
+
+    .aboutMe img {
+        float: none;
+        width: 100%;
+        padding: 0 42px 0 46px;
+    }
+
+    .aboutMe .aboutMeText {
+        float: none;
+        width: initial;
+        padding-left: initial;
+        padding-right: initial;
+        margin: 0 20px;
+    }
+
+
+    .aboutMeText h2 {
+        text-align: center;
+        margin-top: 25px;
+    } 
+
+    .aboutMe .findOutMore {
+        margin: 0 auto;
+    }
+
+
+    /* RESPONSIVE GALLERY STYLES */
+
+    .gallery img {
+        margin: 0;
+        width: 50%;
+    }
+
+    .gallery img:nth-child(2n){
+        margin: initial;
+    }
+
+    .gallery img:last-child {
+        display: none;  
+    }
+
+    /* RESPONSIVE INPUT STYLES */
+
+    input {
+        float: none;
+        height: 50px;  
+    }
+
+    input[type=email] {
+        width:100%;
+    }
+
+    input[type=submit] {
+        padding:10px 0;
+        width:100%;
+    }
+
+    ::placeholder {
+        text-align: center;
+    }
+    /* RESONSIVE FOOTER STYLES */
+
+    .topFooter {
+        padding: 50px 0;
+    }
+
+    .footColumn {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footColumn:nth-child(2) {
+        margin-left: initial;
+        margin-top: 25px;
+    }
+    
+
+    .stayUpdatedColumn {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
