@@ -17,16 +17,19 @@
             <div class="summitLogo">
                 <a href="#">Summit</a>
             </div>
-            <ul class="navLeft" id="hamburgerNav">
+            <div class="hamburger">
+                <img src="hamburger-menu.png" alt="hamburger menu icon">
+            </div>
+            </div>
+            <input type="checkbox" id="navmenu">
+            <ul class="navLeft">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <a href="javascript:void(0);" class="icon" onclick="dropdownNav()">
-                    <i class="fa fa-bars fa fa-2x"></i></a>
             </ul>
         </nav>
-        <!-- </div> -->
+            <!-- HERO SECTION BEGINS -->
             <div class="heroText">
                 <h1 class="smallText">welcome to</h1>
                 <h1 class="largeText">summit</h1>
@@ -36,13 +39,12 @@
                 <a href="#" target=“_blank”><i class="fab fa-instagram" title="Follow us on Instagram!"></i></a>
                 <a href="#" target=“_blank”><i class="fab fa-linkedin-in" title="Follow us on LinkedIn!"></i></a>
                 <a href="#" target=“_blank”><i class="fab fa-twitter" title="Tweet at us!"></i></a>
-            </div>
-        
+            </div>   
     </header>
-    
+    <!-- HEAD CONTENT ENDS -->
+
     <!-- MAIN CONTENT BEGINS -->
     <main id="maincontent">
-
         <section class="aboutWrapper">
                 <div class="aboutText">
                     <h2>About summit</h2>
@@ -52,19 +54,11 @@
                     </div>
                 </div>
         </section>
-
-
-
-
-
-
-
-
         <!-- 2x2 grid of images and text BEGINS -->
         <section class="fourSquare clearfix">
             
             <div class="row1">
-                <img src="assets/mountain.jpg" alt="a snow covered mountain with some out of focus flowers in front">
+                <img src="Assets/mountain.jpg" alt="a snow covered mountain with some out of focus flowers in front">
             </div>     
             <div class="row1">
                 <div class="textBox">
@@ -79,7 +73,7 @@
 
             <div class="fourSquare2 clearfix">
                 <div class="row2">
-                    <img src="assets/airplaneWing.jpg" alt="a view of the mountains from an airplane with the airplane wing visible">
+                    <img src="Assets/airplaneWing.jpg" alt="a view of the mountains from an airplane with the airplane wing visible">
                 </div>
                 <div class="row2">
                     <div class="textBox"> 
@@ -96,21 +90,9 @@
         <!-- 2x2 grid of images and text ends -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- ICON SECTION BEGINS -->
         <section class="iconSection">
+
             <div class="iconWrapper clearfix">
                 <div class="icons">
                     <i class="fas fa-images"></i>
@@ -128,22 +110,10 @@
         </section>
         <!-- ICON SECTION ENDS -->
 
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- ABOUT ME SECTION BEGINS -->
         <section class="aboutMe">
             <div class="clearfix innerWrapper">
-                <img src="assets/headshot.jpg" alt="A smiling woman with blonde hair wearing a jean jacket outside">
+                <img src="Assets/headshot.jpg" alt="A smiling woman with blonde hair wearing a jean jacket outside">
                 <div class="aboutMeText">
                     <h2>About me</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum
@@ -157,25 +127,20 @@
         </section>
         <!-- ABOUT ME SECTION ENDS -->
 
-
-
-
-
-
         <!-- GALLERY SECTION -->
         <section> 
-            <div class="gallery clearfix">
-                <div class="innerWrapper">
-                    <img src="assets/nature1.jpg" alt="forest with mountains and cloudy sky in the background">
-                    <img src="assets/nature2.jpg" alt="snowy rocky mountain with a grey sky">
-                    <img src="assets/nature3.jpg" alt="snowy mountain with a lake and cloudy skys above">
+            <div class="gallery">
+                <div class="innerWrapper clearfix">
+                    <img src="Assets/nature1.jpg" alt="forest with mountains and cloudy sky in the background">
+                    <img src="Assets/nature2.jpg" alt="snowy rocky mountain with a grey sky">
+                    <img src="Assets/nature3.jpg" alt="snowy mountain with a lake and cloudy skys above">
                 </div>
             </div>
         </section>
         <!-- GALLERY SECTION ENDS -->
     </main>
     <!-- MAIN CONTENT ENDS -->
-    
+
     <!-- FOOTER CONTENT BEGINS -->
     <footer>
         <div class="topFooter clearfix">
@@ -213,25 +178,15 @@
             </div>
         </div>    
         <div class="bottomFooter">
-            <p>Copyright © 2018 HackerYou</p>
+            <p>Copyright &copy; 2018 HackerYou</p>
         </div>
     </footer>
     <!-- FOOTER CONTENT ENDS -->
-
+    
         <!-- JAVASCRIPT CODE-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             console.log("Document is ready")
-
-            function dropdownNav() {
-                var hamburgerNav = document.getElementById("hamburgerNav");
-                if (hamburgerNav.className === "navLeft") {
-                    hamburgerNav.className += " responsive";
-                } else {
-                    hamburgerNav.className = "navLeft";
-                }
-            }
         </script>
-
 </body>
 </html>

@@ -33,6 +33,7 @@ img {
 }
 
 /* MAIN CONTENT STYLES */
+/* =================== */
 
 .skip-link {
     position: absolute;
@@ -46,7 +47,6 @@ img {
 .skip-link:focus {
     left: 0;
 }
-
 
 h1,
 h2,
@@ -116,6 +116,17 @@ a,
     float: right;
 }
 
+/* HIDDEN HAMBURGER MENU */
+
+.hamburger img {
+    display: none;
+}
+
+input[type=checkbox] {
+    display: none;
+    cursor: pointer;
+}
+
 nav ul,
 footer ul {
     padding: 0;
@@ -165,7 +176,7 @@ h1.largeText {
 }
 
 /* ABOUT SUMMIT STYLES */
-
+/* =================== */
 
 .aboutWrapper {
     width: 49.4%;
@@ -185,14 +196,38 @@ h1.largeText {
     margin: 0;
 }
 
+
+/* LINK/BUTTON STYLES */
+/* ================== */
+
 .findOutMore {
     background:#8dd7e9;
     width: 214px;
     height: 50px;
     margin:0 auto;
-    /* padding: 0; */
     text-align: center;
     line-height: 50px;
+    transition: ease 0.2s;
+}
+
+.readMore {
+    background:#8dd7e9;
+    width: 160px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    transition: ease 0.2s;
+}
+
+.findOutMore:hover,
+.readMore:hover {
+    background: #094154;
+}
+
+.findOutMore a:hover,
+.readMore a:hover {
+    color: white;
 }
 
 .aboutMe .findOutMore {
@@ -255,54 +290,34 @@ h1.largeText {
     text-align: center;
 }
 
-.readMore {
-    background:#8dd7e9;
-    width: 160px;
-    height: 50px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 50px;
-}
-
-
-
-
-
 
 
 
 
 
 /* ICONS STYLES */
-
+/* ============ */
 
 .iconSection {
     background: #215a6d;
 }
 
-.icons h3 {
-    padding-top:28.5px;
-    margin: 0;
-}
-
 .iconWrapper {
     margin: 0 25.625%;
-    /* margin: 0 auto; */
+    /* 410/1600 */
     background: #215a6d;
     padding: 100px 0;
 }
+
 .icons {
     float: left;
-    width: 33%;
-    padding: 0 4.7%;
+    width: calc(100% / 3 - 242px / 3);
+    /* margin: 0 60px; */
     text-align: center;
 }
 
-.icons:first-child {
-    padding-left: 0;
-}
-.icons:last-child {
-    padding-right: 0;
+.icons:nth-child(2n){
+    margin: 0 121px;
 }
 
 .fas {
@@ -313,12 +328,13 @@ h1.largeText {
 .icons h3 {
     color: white;
     text-align: center;
+    padding-top:28.5px;
+    margin: 0;
 }
 
-
-
-
+/*================*/
 /* ABOUT ME STYLES */
+/*================*/
 
 .aboutMe h2 {
     margin: 0;
@@ -344,20 +360,6 @@ h1.largeText {
     padding-left: 37px;
 }
 
-.aboutMeText p {
-    /* margin: 25px 0; */
-}
-
-
-
-
-
-
-
-
-
-
-
 /*================*/
 /* GALLERY STYLES */
 /*================*/
@@ -369,7 +371,7 @@ h1.largeText {
 
 .gallery img {
     float: left;
-    /* width: calc(33% - 80px); */
+    width: calc(100% / 3 - 80px / 3);
 }
 
 .gallery img:nth-child(2n){
@@ -396,22 +398,20 @@ input[type=submit] {
     font-weight: bold;
     text-transform: uppercase;
 	padding:10px 0;
-	transition: ease 0.1s;
+	transition: ease 0.2s;
     cursor: pointer;
     width:40%;
     border:none;
 }
 
-::placeholder {
-	color: #232323;
-}
-
 input[type=submit]:hover {
-	background:rgba(22, 64, 128,0.5);
+    background:#094154;
 	color: white;
 }
 
-
+::placeholder {
+    color: #232323;
+}
 
 /* FOOTER STYLES */
 /* ============= */
@@ -420,21 +420,11 @@ footer {
     clear: both;
 }
 
-/* .footFont p {
-    font-size: 2.4rem;
-    font-weight: bold; 
-} */
-
 .topFooter {
     background: #215a6d;
     color: white;
     padding: 100px 0;
 }
-
-/* footer p {
-    margin-top: 4px;
-} */
-/* pixel counting or nah */
 
 .footColumn {
     float: left;
@@ -469,7 +459,7 @@ footer {
     display: block;
 }
 .footColumn a {
-     font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: normal;
     text-transform: capitalize;
@@ -508,54 +498,62 @@ footer {
 @media (max-width: 1280px) {
     
     .innerWrapper {
-        max-width: 1100px;
+        max-width: 1200px;
         margin: 0 auto;
     }
-
-    .fourSquare {
-        background: #f6f6f6;
-    }
-
-    /* WORK ON REMOVING WIERD PADDING HERE */
 
     .textBox {
         padding: 0;
+        padding-top: 30px;
     }
 
     .row1 .textBox {
-        width: 60.25%;
-        margin-left: 20%;
+        width: 100%;
+        margin-left: 0;
     }    
 
     .row2 .textBox {
-        width: 42.5%;
-        margin-left: 10%;
-    }
-
-    .gallery {
-        margin: 0 auto;
-    }
-    
-    .gallery img {
-        float: left;
-        /* width: calc(33% - (20px * 4)); */
-        /* margin: 100px 0; */
+        width: 100%;
+        margin-left: 0;
     }
 
     .footColumn:nth-child(2) {
         margin-left: 25px;
         margin-top: 0;
     }
+}
 
+@media (max-width: 1115px) {
+    .textBox {
+        padding: 0;
+        padding-top: 15px;
+    }
 
+    .iconWrapper {
+    margin: 0 20px;
+    }
 
+    .icons:nth-child(2n){
+    margin: 0 90px;
+}
+
+.fas {
+    color: white;
+    font-size: 3.65rem;
+}
+
+.icons h3 {
+    color: white;
+    text-align: center;
+    padding-top:28.5px;
+    margin: 0;
+}
 
 
 }
 
-
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 875px) {
 
     h1.smallText {
         font-size: 2.2rem;
@@ -566,14 +564,92 @@ footer {
         font-size: 10rem;
         margin: 0;
     }
+
+    .aboutWrapper {
+        width: 85%;
+    }
+
+    .fourSquare img {
+        margin: 0 auto;
+    }
+
+    .row1 {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .row2 {
+        float: none;
+        width: 100%;
+    }
+
+    .textBox {
+        padding: 50px 10px;
+    }
+
+    .topFooter {
+        padding: 0 50px;
+    }
+
+    /* COPY BELOW INTO RESPONSIVE MOBILE AND FIX WHAT MAKES IT BROKEN  */
+
+
+    .stayUpdatedColumn {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .stayUpdatedColumn {
+        text-align: center;
+    }
+
+    .footColumn {
+        margin: 0 5px;
+        padding-top: 20px;
+    }
+
+    .footColumn:nth-of-type(2n) {
+        width: calc(100% / 3);
+    }
 }
 
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
 }
 
+@media only screen and (max-width : 570px) {
 
+    .navLeft {
+        display: none;
+    }
+
+    .hamburger img {
+        display: block;
+        float: right;
+        padding-top: 3px;
+        padding-right: 20px;
+    }
+
+    .gallery img {
+        margin: 0;
+        width: 50%;
+    }
+
+    .gallery {
+    padding: 0;
+    }
+
+    .gallery img:nth-child(2n){
+        margin: initial;
+    }
+
+    .gallery img:last-child {
+        display: none;  
+    }
+}
 
 /* FOR SMARTPHONES PORTRAIT AND LANDSCAPE */
 
@@ -581,6 +657,7 @@ footer {
 
     header {
         height: 600px;
+        position: relative;
     }
 
     .summitLogo {
@@ -603,33 +680,6 @@ footer {
         margin-top: 98px;
     }
 
-    /* .navLeft a.icon {
-	  display: block;
-	} */
-
-	.navLeft.responsive {position: relative;}
-	.navLeft.responsive .icon {
-	  position: relative;
-	  right: 0;
-	  top: 0;
-    }
-    
-	.navLeft.responsive a {
-	  display: block;
-	  text-align: center;
-	}
-	.navLeft.responsive {float: none;}
-	.navLeft.responsive {position: relative;}
-	.navLeft.responsive {
-	  display: block;
-	  width: 100%;
-	}
-
-/* WORK ON HAMBURGER up HERE ----------------*/
-    .navLeft {
-	    display: none;
-	}
-
     h1.smallText {
         font-size: 2.6rem;
         margin: 45px 0;
@@ -649,7 +699,7 @@ footer {
     /* ========================*/
     .aboutWrapper {
         width:initial; 
-        padding: 50px 20px;
+        padding: 50px 10px;
     }
 
     .aboutText h2 {
@@ -659,16 +709,6 @@ footer {
 
     /* CELL STYLES */
     /* =========== */
-
-    .row1 {
-        float: none;
-        width: 100%;
-    }
-
-    .row2 {
-        float: none;
-        width: 100%;
-    }
 
     .textBox {
         padding: 50px 0;
@@ -680,7 +720,7 @@ footer {
 
     .textBox h3 {
         margin: 0;
-        padding: 0 32px;
+        padding: 0 5px;
     }
 
     .fourSquare img,
@@ -703,11 +743,6 @@ footer {
     .textBox p {
         text-align: center;
     }
-
-
-
-
-    
 
     /* RESPONSIVE ICON STYLES */
     
@@ -732,6 +767,10 @@ footer {
     .icons:last-child {
         padding-right: initial;
         margin-bottom: 0;
+    }
+
+    .icons:nth-child(2n){
+        margin: 0;
     }
 
     .icons h3 {
@@ -762,7 +801,6 @@ footer {
         margin: 0 20px;
     }
 
-
     .aboutMeText h2 {
         text-align: center;
         margin-top: 25px;
@@ -772,21 +810,9 @@ footer {
         margin: 0 auto;
     }
 
-
     /* RESPONSIVE GALLERY STYLES */
 
-    .gallery img {
-        margin: 0;
-        width: 50%;
-    }
 
-    .gallery img:nth-child(2n){
-        margin: initial;
-    }
-
-    .gallery img:last-child {
-        display: none;  
-    }
 
     /* RESPONSIVE INPUT STYLES */
 
@@ -809,6 +835,10 @@ footer {
     }
     /* RESONSIVE FOOTER STYLES */
 
+    .footColumn:nth-of-type(2n) {
+        width: initial;
+    }
+
     .topFooter {
         padding: 50px 0;
     }
@@ -817,6 +847,7 @@ footer {
         float: none;
         width: 100%;
         margin: 0 auto;
+        padding-top: initial;
         text-align: center;
     }
 
@@ -825,7 +856,6 @@ footer {
         margin-top: 25px;
     }
     
-
     .stayUpdatedColumn {
         width: 100%;
         padding: 0 20px;
